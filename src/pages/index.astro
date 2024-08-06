@@ -1,5 +1,5 @@
 ---
-
+import Location from "../components/location.astro";
 ---
 
 <html lang="en">
@@ -12,5 +12,8 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+			<Location server:defer>
+				<span slot="fallback">This is my loading dance!</span>
+			</Location>
 	</body>
 </html>
